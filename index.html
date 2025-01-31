@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samson Akintola - Cybersecurity Architect</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #0078d4;
+            --secondary-color: #2d3033;
+        }
+        
+        .navbar {
+            background: var(--secondary-color) !important;
+        }
+        
+        .skill-badge {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .experience-card {
+            transition: transform 0.3s;
+        }
+        
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">SAMSON AKINTOLA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-5 mt-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Cybersecurity Architect</h1>
+            <p class="lead mb-4">Cloud Security Expert | Zero Trust Advocate | Compliance Specialist</p>
+            <div class="d-flex gap-3 justify-content-center">
+                <a href="#contact" class="btn btn-primary btn-lg px-4">Hire Me</a>
+                <a href="assets/resume.pdf" download class="btn btn-outline-primary btn-lg px-4">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Professional Experience</h2>
+            
+            <div class="row g-4">
+                <!-- PAQADS Card -->
+                <div class="col-lg-6">
+                    <div class="card experience-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">PAQADS, UK</h3>
+                            <h5 class="card-subtitle mb-3 text-muted">Senior Technology Architect & Security Manager</h5>
+                            <div class="card-text">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Led 200+ app migrations to AWS/Azure with 99.99% uptime</li>
+                                    <li class="list-group-item">Implemented Zero Trust Architecture (40% risk reduction)</li>
+                                    <li class="list-group-item">Designed SIEM/EDR solutions with Azure Sentinel & Defender</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted">2017 - 2024</div>
+                    </div>
+                </div>
+
+                <!-- SHAMARTECH Card -->
+                <div class="col-lg-6">
+                    <div class="card experience-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">SHAMARTECH, Lagos</h3>
+                            <h5 class="card-subtitle mb-3 text-muted">Cloud Solutions Architect</h5>
+                            <div class="card-text">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Developed disaster recovery plans for critical systems</li>
+                                    <li class="list-group-item">Managed IAM systems (SailPoint, CyberArk)</li>
+                                    <li class="list-group-item">Automated tasks with PowerShell (60% efficiency gain)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted">2015 - 2017</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Technical Skills</h2>
+            
+            <div class="row g-4">
+                <!-- Cloud Skills -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-cloud-fill"></i> Cloud & Infrastructure</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-badge badge">AWS</span>
+                                <span class="skill-badge badge">Azure</span>
+                                <span class="skill-badge badge">Kubernetes</span>
+                                <span class="skill-badge badge">Terraform</span>
+                                <span class="skill-badge badge">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Skills -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-shield-lock-fill"></i> Security</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-badge badge">SIEM</span>
+                                <span class="skill-badge badge">EDR</span>
+                                <span class="skill-badge badge">DLP</span>
+                                <span class="skill-badge badge">NIST</span>
+                                <span class="skill-badge badge">Zero Trust</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Skills -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-code-square"></i> Development</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-badge badge">Python</span>
+                                <span class="skill-badge badge">PowerShell</span>
+                                <span class="skill-badge badge">API Development</span>
+                                <span class="skill-badge badge">IaC</span>
+                                <span class="skill-badge badge">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Certifications</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-patch-check-fill fs-1 text-primary"></i>
+                            <h5 class="card-title mt-3">CISSP</h5>
+                            <p class="card-text">Certified Information Systems Security Professional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-aws fs-1 text-primary"></i>
+                            <h5 class="card-title mt-3">AWS Solutions Architect</h5>
+                            <p class="card-text">Professional Level Certification</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-microsoft fs-1 text-primary"></i>
+                            <h5 class="card-title mt-3">Azure Architect Expert</h5>
+                            <p class="card-text">Microsoft Certified Solutions Expert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-dark text-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Let's Connect</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <a href="mailto:samsonakintola.ca@gmail.com" class="btn btn-outline-light">
+                    <i class="bi bi-envelope"></i> Email
+                </a>
+                <a href="https://linkedin.com/in/samsonakintola" target="_blank" class="btn btn-outline-light">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/samsonakintola" target="_blank" class="btn btn-outline-light">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+            </div>
+            <p class="mt-4 mb-0">Toronto, ON | Open to Relocation Across Canada</p>
+            <p class="mb-0">Phone: (226) 752-5703</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</body>
+</html>
