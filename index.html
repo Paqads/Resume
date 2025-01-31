@@ -3,39 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samson Akintola - Cybersecurity Architect</title>
-    <!-- Bootstrap 5.3 CSS -->
+    <title>Samson Akintola - Cybersecurity & AI Architect</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <style>
         :root {
             --primary-color: #0078d4;
             --secondary-color: #2d3033;
+            --ai-color: #4CAF50;
+            --security-color: #f44336;
         }
-        
-        .navbar {
+
+        .nav-bg {
             background: var(--secondary-color) !important;
         }
-        
+
         .skill-badge {
             background: var(--primary-color);
             color: white;
+            font-size: 0.9rem;
         }
-        
-        .experience-card {
-            transition: transform 0.3s;
+
+        .ai-badge {
+            background: var(--ai-color);
+            color: white;
         }
-        
-        .experience-card:hover {
+
+        .security-badge {
+            background: var(--security-color);
+            color: white;
+        }
+
+        .section-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hover-shadow {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hover-shadow:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .capability-list {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .capability-list li::before {
+            content: "▹";
+            color: var(--primary-color);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
     </style>
 </head>
 <body class="bg-light">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">SAMSON AKINTOLA</a>
+            <a class="navbar-brand fw-bold" href="#">SAMSON AKINTOLA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,6 +75,7 @@
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#capabilities">Capabilities</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -53,12 +85,12 @@
     <!-- Hero Section -->
     <header class="py-5 mt-5">
         <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-3">Cybersecurity Architect</h1>
-            <p class="lead mb-4">Cloud Security Expert | Zero Trust Advocate | Compliance Specialist</p>
+            <h1 class="display-4 fw-bold mb-3">Cybersecurity & AI Solutions Architect</h1>
+            <p class="lead mb-4">Cloud Security Expert | Zero Trust Specialist | AI/ML Security Strategist</p>
             <div class="d-flex gap-3 justify-content-center">
-                <a href="#contact" class="btn btn-primary btn-lg px-4">Hire Me</a>
+                <a href="#contact" class="btn btn-primary btn-lg px-4">Contact Me</a>
                 <a href="assets/resume.pdf" download class="btn btn-outline-primary btn-lg px-4">
-                    Download Resume
+                    <i class="bi bi-download me-2"></i>Resume
                 </a>
             </div>
         </div>
@@ -67,97 +99,98 @@
     <!-- Experience Section -->
     <section id="experience" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Professional Experience</h2>
+            <h2 class="text-center mb-5"><i class="bi bi-briefcase section-icon"></i>Professional Experience</h2>
             
-            <div class="row g-4">
-                <!-- PAQADS Card -->
-                <div class="col-lg-6">
-                    <div class="card experience-card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title">PAQADS, UK</h3>
-                            <h5 class="card-subtitle mb-3 text-muted">Senior Technology Architect & Security Manager</h5>
-                            <div class="card-text">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Led 200+ app migrations to AWS/Azure with 99.99% uptime</li>
-                                    <li class="list-group-item">Implemented Zero Trust Architecture (40% risk reduction)</li>
-                                    <li class="list-group-item">Designed SIEM/EDR solutions with Azure Sentinel & Defender</li>
-                                </ul>
-                            </div>
+            <!-- PAQADS Experience -->
+            <div class="card hover-shadow mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="text-primary">PAQADS, UK</h3>
+                            <p class="text-muted">2017 - 2024</p>
                         </div>
-                        <div class="card-footer text-muted">2017 - 2024</div>
+                        <div class="col-md-8">
+                            <h4>Senior Technology Architect & Security Manager</h4>
+                            <ul class="capability-list">
+                                <li>Orchestrated cloud migration for 200+ applications with 99.99% uptime</li>
+                                <li>Pioneered Zero Trust implementation reducing lateral movement risks by 40%</li>
+                                <li>Integrated AI-driven threat detection models with SIEM systems</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- SHAMARTECH Card -->
-                <div class="col-lg-6">
-                    <div class="card experience-card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title">SHAMARTECH, Lagos</h3>
-                            <h5 class="card-subtitle mb-3 text-muted">Cloud Solutions Architect</h5>
-                            <div class="card-text">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Developed disaster recovery plans for critical systems</li>
-                                    <li class="list-group-item">Managed IAM systems (SailPoint, CyberArk)</li>
-                                    <li class="list-group-item">Automated tasks with PowerShell (60% efficiency gain)</li>
-                                </ul>
-                            </div>
+            <!-- SHAMARTECH Experience -->
+            <div class="card hover-shadow">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="text-primary">SHAMARTECH, Lagos</h3>
+                            <p class="text-muted">2015 - 2017</p>
                         </div>
-                        <div class="card-footer text-muted">2015 - 2017</div>
+                        <div class="col-md-8">
+                            <h4>Cloud Solutions Architect</h4>
+                            <ul class="capability-list">
+                                <li>Developed disaster recovery solutions with 99.5% RTO achievement</li>
+                                <li>Automated security compliance checks using Python/PowerShell</li>
+                                <li>Implemented ML-powered anomaly detection systems</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Technical Skills Section -->
     <section id="skills" class="py-5 bg-white">
         <div class="container">
-            <h2 class="text-center mb-5">Technical Skills</h2>
-            
+            <h2 class="text-center mb-5"><i class="bi bi-tools section-icon"></i>Technical Skills</h2>
             <div class="row g-4">
-                <!-- Cloud Skills -->
-                <div class="col-md-4">
-                    <div class="card h-100">
+                <!-- Cybersecurity Skills -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 hover-shadow">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="bi bi-cloud-fill"></i> Cloud & Infrastructure</h5>
+                            <h5 class="card-title text-security"><i class="bi bi-shield-shaded"></i> Cybersecurity</h5>
                             <div class="d-flex flex-wrap gap-2">
-                                <span class="skill-badge badge">AWS</span>
-                                <span class="skill-badge badge">Azure</span>
-                                <span class="skill-badge badge">Kubernetes</span>
-                                <span class="skill-badge badge">Terraform</span>
-                                <span class="skill-badge badge">CI/CD</span>
+                                <span class="security-badge badge">SIEM/EDR/XDR</span>
+                                <span class="security-badge badge">Zero Trust Architecture</span>
+                                <span class="security-badge badge">NIST/ISO 27001</span>
+                                <span class="security-badge badge">Cloud Security Posture</span>
+                                <span class="security-badge badge">Penetration Testing</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Security Skills -->
-                <div class="col-md-4">
-                    <div class="card h-100">
+                <!-- AI/ML Skills -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 hover-shadow">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="bi bi-shield-lock-fill"></i> Security</h5>
+                            <h5 class="card-title text-ai"><i class="bi bi-cpu"></i> AI/ML Expertise</h5>
                             <div class="d-flex flex-wrap gap-2">
-                                <span class="skill-badge badge">SIEM</span>
-                                <span class="skill-badge badge">EDR</span>
-                                <span class="skill-badge badge">DLP</span>
-                                <span class="skill-badge badge">NIST</span>
-                                <span class="skill-badge badge">Zero Trust</span>
+                                <span class="ai-badge badge">LLM Security</span>
+                                <span class="ai-badge badge">Generative AI</span>
+                                <span class="ai-badge badge">MLOps</span>
+                                <span class="ai-badge badge">NLP Security</span>
+                                <span class="ai-badge badge">TensorFlow/PyTorch</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Development Skills -->
-                <div class="col-md-4">
-                    <div class="card h-100">
+                <!-- Cloud & DevOps -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 hover-shadow">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="bi bi-code-square"></i> Development</h5>
+                            <h5 class="card-title text-primary"><i class="bi bi-cloud"></i> Cloud & DevOps</h5>
                             <div class="d-flex flex-wrap gap-2">
-                                <span class="skill-badge badge">Python</span>
-                                <span class="skill-badge badge">PowerShell</span>
-                                <span class="skill-badge badge">API Development</span>
-                                <span class="skill-badge badge">IaC</span>
-                                <span class="skill-badge badge">Docker</span>
+                                <span class="skill-badge badge">AWS/Azure/GCP</span>
+                                <span class="skill-badge badge">Kubernetes/Docker</span>
+                                <span class="skill-badge badge">Terraform/Ansible</span>
+                                <span class="skill-badge badge">CI/CD Pipelines</span>
+                                <span class="skill-badge badge">Serverless Architecture</span>
                             </div>
                         </div>
                     </div>
@@ -169,32 +202,116 @@
     <!-- Certifications Section -->
     <section id="certifications" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Certifications</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
+            <h2 class="text-center mb-5"><i class="bi bi-award section-icon"></i>Certifications</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 hover-shadow">
                         <div class="card-body text-center">
-                            <i class="bi bi-patch-check-fill fs-1 text-primary"></i>
+                            <i class="bi bi-shield-check fs-1 text-security"></i>
                             <h5 class="card-title mt-3">CISSP</h5>
-                            <p class="card-text">Certified Information Systems Security Professional</p>
+                            <p class="card-text">Certified Information Systems Security Professional (ISC²)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="col-md-4">
+                    <div class="card h-100 hover-shadow">
                         <div class="card-body text-center">
-                            <i class="bi bi-aws fs-1 text-primary"></i>
+                            <i class="bi bi-amazon fs-1 text-primary"></i>
                             <h5 class="card-title mt-3">AWS Solutions Architect</h5>
-                            <p class="card-text">Professional Level Certification</p>
+                            <p class="card-text">Professional Certification</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="col-md-4">
+                    <div class="card h-100 hover-shadow">
                         <div class="card-body text-center">
                             <i class="bi bi-microsoft fs-1 text-primary"></i>
-                            <h5 class="card-title mt-3">Azure Architect Expert</h5>
+                            <h5 class="card-title mt-3">Azure Security Engineer</h5>
+                            <p class="card-text">Microsoft Certified Associate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 hover-shadow">
+                        <div class="card-body text-center">
+                            <i class="bi bi-file-lock fs-1 text-security"></i>
+                            <h5 class="card-title mt-3">MCSE: Security</h5>
                             <p class="card-text">Microsoft Certified Solutions Expert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 hover-shadow">
+                        <div class="card-body text-center">
+                            <i class="bi bi-patch-question fs-1 text-ai"></i>
+                            <h5 class="card-title mt-3">ACEDS (In Progress)</h5>
+                            <p class="card-text">Certified E-Discovery Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Capabilities -->
+    <section id="capabilities" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5"><i class="bi bi-person-gear section-icon"></i>Professional Capabilities</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 hover-shadow">
+                        <div class="card-body">
+                            <h5 class="text-primary"><i class="bi bi-gear-wide-connected"></i> Technical Expertise</h5>
+                            <ul class="capability-list">
+                                <li>Security Architecture Design</li>
+                                <li>Cloud Migration Strategies</li>
+                                <li>AI/ML Security Implementation</li>
+                                <li>Incident Response Automation</li>
+                                <li>Compliance Framework Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 hover-shadow">
+                        <div class="card-body">
+                            <h5 class="text-primary"><i class="bi bi-lightbulb"></i> Leadership & Innovation</h5>
+                            <ul class="capability-list">
+                                <li>Cross-functional Team Leadership</li>
+                                <li>Technical Documentation & Reporting</li>
+                                <li>Risk Assessment & Mitigation</li>
+                                <li>Client Advisory & Stakeholder Management</li>
+                                <li>Emerging Technology Research</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5"><i class="bi bi-mortarboard section-icon"></i>Education</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 hover-shadow">
+                        <div class="card-body text-center">
+                            <i class="bi bi-book fs-1 text-primary"></i>
+                            <h5>Master of Science</h5>
+                            <p class="text-muted">Computer Science</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 hover-shadow">
+                        <div class="card-body text-center">
+                            <i class="bi bi-journal-code fs-1 text-primary"></i>
+                            <h5>Bachelor of Science</h5>
+                            <p class="text-muted">Computer Science</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -203,28 +320,44 @@
     </section>
 
     <!-- Contact Section -->
-    <footer id="contact" class="bg-dark text-light py-5">
+    <footer id="contact" class="py-5 bg-dark text-light">
         <div class="container text-center">
-            <h2 class="mb-4">Let's Connect</h2>
-            <div class="d-flex flex-wrap justify-content-center gap-4">
-                <a href="mailto:samsonakintola.ca@gmail.com" class="btn btn-outline-light">
-                    <i class="bi bi-envelope"></i> Email
-                </a>
-                <a href="https://linkedin.com/in/samsonakintola" target="_blank" class="btn btn-outline-light">
-                    <i class="bi bi-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/samsonakintola" target="_blank" class="btn btn-outline-light">
-                    <i class="bi bi-github"></i> GitHub
-                </a>
+            <h2 class="mb-4"><i class="bi bi-envelope-check section-icon"></i>Let's Connect</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="lead">Open to opportunities across Canada</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="mailto:samsonakintola.ca@gmail.com" class="btn btn-outline-light">
+                            <i class="bi bi-envelope me-2"></i>Email
+                        </a>
+                        <a href="https://linkedin.com/in/samsonakintola" target="_blank" class="btn btn-outline-light">
+                            <i class="bi bi-linkedin me-2"></i>LinkedIn
+                        </a>
+                        <a href="https://github.com/samsona-kintola" target="_blank" class="btn btn-outline-light">
+                            <i class="bi bi-github me-2"></i>GitHub
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="mb-1"><i class="bi bi-geo-alt"></i> Toronto, ON | Open to Relocation</p>
+                        <p class="mb-0"><i class="bi bi-phone"></i> (226) 752-5703</p>
+                    </div>
+                </div>
             </div>
-            <p class="mt-4 mb-0">Toronto, ON | Open to Relocation Across Canada</p>
-            <p class="mb-0">Phone: (226) 752-5703</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS and Popper.js -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
